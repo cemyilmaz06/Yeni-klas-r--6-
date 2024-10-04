@@ -5,7 +5,7 @@ user:""
 }
 
 const authSlice=createSlice({
-    naem:"auth",
+    name:"auth",
     initialState,
 
     reducers:{
