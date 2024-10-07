@@ -1,11 +1,13 @@
+import { AppBar, Container, Toolbar, Typography } from '@mui/material';
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <AppBar position="static">
-    <Container maxWidth="xl">
-      <Toolbar disableGutters>
-        <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+   
+      <Toolbar disableGutters sx={{justifyContent:"space-between",margin:"10px"}}>
+     
         <Typography
           variant="h6"
           noWrap
@@ -19,9 +21,10 @@ const Navbar = () => {
             letterSpacing: '.3rem',
             color: 'inherit',
             textDecoration: 'none',
+            marginLeft:"20px"
           }}
         >
-          HOME
+         <Link style={{textDecoration:"none",color:"white"}} to="/">HOME</Link> 
         </Typography>
         <Typography
           variant="h6"
@@ -38,14 +41,14 @@ const Navbar = () => {
             textDecoration: 'none',
           }}
         >
-          LOGİN
+          <Link style={{textDecoration:"none",color:"white"}} to="/">LOGIN</Link> 
         </Typography>
+        
 
        
-          
        
       </Toolbar>
-    </Container>
+ 
   </AppBar>
 );
 }
