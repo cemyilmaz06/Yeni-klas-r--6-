@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import PrivateRouter from './PrivateRouter'
 import Home from '../pages/Home'
+import Login from '../components/Login'
+import Register from '../components/Register'
 
 const AppRouter = () => {
   return (
