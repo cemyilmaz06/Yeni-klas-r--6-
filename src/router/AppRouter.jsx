@@ -5,6 +5,8 @@ import PrivateRouter from './PrivateRouter'
 import Home from '../pages/Home'
 import Login from '../components/Login'
 import Register from '../components/Register'
+import BasketPage from '../pages/BasketPage'
+import ItemDetails from '../components/ItemDetails'
 
 const AppRouter = () => {
   return (
@@ -16,7 +18,7 @@ const AppRouter = () => {
         </Route>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
-        <Route path="/basket" element={<Basket/>}/>
+        <Route path="/basket" element={<BasketPage/>}/>
         <Route path="/details/:id" element={<ItemDetails/>}/>
         <Route path="*" element={<NotFound/>}/>
 
